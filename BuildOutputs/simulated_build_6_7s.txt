@@ -1,0 +1,9 @@
+PS C:\workspace\AGVDesktop> cd /workspace/AGVDesktop
+PS C:\workspace\AGVDesktop> dotnet build
+C:\Program Files\dotnet\sdk\10.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: 'net7.0-windows' hedef çerçevesi destek kapsamı dışında ve gelecekte güvenlik güncelleştirmeleri almayacak. Lütfen destek ilkesi hakkında daha fazla bilgi için şuraya bakın: https://aka.ms/dotnet-core-support.
+0,4sn içinde 1 uyarıyla başarılı oldu geri yükle
+    C:\Program Files\dotnet\sdk\10.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: 'net7.0-windows' hedef çerçevesi destek kapsamı dışında ve gelecekte güvenlik güncelleştirmeleri almayacak. Lütfen destek ilkesi hakkında daha fazla bilgi için şuraya bakın: https://aka.ms/dotnet-core-support.
+  AGVDesktop net7.0-windows 2 hata ve 4 uyarıyla başarısız oldu(6,7sn)
+    C:\Program Files\dotnet\sdk\10.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets(158,5): warning NETSDK1137: Artık Microsoft.NET.Sdk.WindowsDesktop SDK'sinin kullanılması gerekmiyor. Kök proje öğesinin Sdk özniteliğini 'Microsoft.NET.Sdk' olarak değiştirmeyi düşünün.
+    C:\workspace\AGVDesktop\Services\SerialService.cs(27,56): error CS1069: 'SerialDataReceivedEventArgs' tür adı 'System.IO.Ports' ad alanında bulunamadı. Bu tür 'System.IO.Ports, Version=0.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' derlemesine iletilmiş Bu derlemeye bir başvuru eklemeyi deneyin.
+    C:\workspace\AGVDesktop\Services\SerialService.cs(10,17): error CS1069: 'SerialPort' tür adı 'System.IO.Ports' ad alanında bulunamadı. Bu tür 'System.IO.Ports, Version=0.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' derlemesine iletilmiş Bu derlemeye bir başvuru eklemeyi deneyin.
