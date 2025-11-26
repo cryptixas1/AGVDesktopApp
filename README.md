@@ -29,6 +29,7 @@ A modern, polished WPF desktop application with Windows 11 Fluent styling, Mica/
 - **Fluent fallback**: reflection-based attempt to use `FluentWPF` host/backdrop APIs if system Mica is not available.
 - **Runtime icon**: generates a crisp application icon at runtime and uses it for both the window and the tray.
 - **Minimize to tray**: user-configurable; runs from the system tray using a `NotifyIcon` with context menu.
+- **Settings + Logging**: settings persisted to `%AppData%\\IAOSB\\settings.json` and runtime logs appended to `%AppData%\\IAOSB\\agv-desktop.log`.
 - **Publish artifacts**: `publish/` and `publish\\win-x64/` produced during release; zips: `AGVDesktop-publish.zip` and `AGVDesktop-win-x64-selfcontained.zip`.
 
 **Screenshots**
@@ -69,6 +70,8 @@ Compress-Archive -Path publish\\win-x64\\* -DestinationPath AGVDesktop-win-x64-s
 ```
 
 **Settings & Logs**
+- Settings file: `SettingsService` persists to `%AppData%\\IAOSB\\settings.json`.
+- Log file: produced at `%AppData%\\IAOSB\\agv-desktop.log` and updated during runtime by `Services/UiLogService.cs`.
 - Diagnostics are exposed in the UI: OS build, DWM HRESULT from Mica attempts, reflection trace from FluentWPF fallback attempts, and paths to the settings/log files.
 
 **Packaging & Releases**
@@ -104,6 +107,28 @@ gh release create v1.0.0 AGVDesktop-publish.zip AGVDesktop-win-x64-selfcontained
 - This project is released under the `Apache-2.0` license. See `LICENSE` for details.
 
 **Authors & Support**
-- Primary maintainer: cryptixas1 — add contact or GitHub handle here.
+- Primary maintainer: YOUR NAME — add contact or GitHub handle here.
 - For support, open an issue on the repository.
 
+**Appendix — Useful Paths & Commands**
+- Settings path: `%AppData%\\IAOSB\\settings.json`
+- Log path: `%AppData%\\IAOSB\\agv-desktop.log`
+- Useful commands:
+
+```powershell
+# Build and run
+dotnet build -c Release
+dotnet run
+
+# Publish artifacts
+dotnet publish -c Release -o publish
+dotnet publish -c Release -r win-x64 --self-contained true -o publish\\win-x64
+```
+
+---
+
+If you want, I can now:
+- Commit this `README.md` and create a polished `.gitignore` and `.github/workflows/ci.yml` for you, or
+- Produce screenshot images and insert them into `docs/screenshots/` and update `README.md` with embedded images.
+
+Hangisini istersin? (Ben `Apache-2.0` önerdim; istersen LICENSE dosyasını otomatik ekleyeyim.)

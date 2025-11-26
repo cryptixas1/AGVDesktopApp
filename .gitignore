@@ -1,0 +1,19 @@
+# Build output
+bin/
+obj/
+publish/
+
+# VS/IDE
+.vs/
+.vscode/
+.idea/
+
+# User files
+*.user
+*.suo
+
+# Logs
+*.log
+# Exclude AppData logs created by app
+AppData/
+$env:APPDATA/IAOSB/

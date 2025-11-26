@@ -1,0 +1,38 @@
+C:\Program Files\dotnet\sdk\10.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: 'net7.0-windows' hedef ├ğer├ğevesi destek kapsam─▒ d─▒┼ş─▒nda ve gelecekte g├╝venlik g├╝ncelle┼ştirmeleri almayacak. L├╝tfen destek ilkesi hakk─▒nda daha fazla bilgi i├ğin ┼şuraya bak─▒n: https://aka.ms/dotnet-core-support. [C:\workspace\AGVDesktop\AGVDesktop.csproj]
+C:\Program Files\dotnet\sdk\10.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: 'net7.0-windows' hedef ├ğer├ğevesi destek kapsam─▒ d─▒┼ş─▒nda ve gelecekte g├╝venlik g├╝ncelle┼ştirmeleri almayacak. L├╝tfen destek ilkesi hakk─▒nda daha fazla bilgi i├ğin ┼şuraya bak─▒n: https://aka.ms/dotnet-core-support. [C:\workspace\AGVDesktop\AGVDesktop.csproj]
+C:\Program Files\dotnet\sdk\10.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: 'net7.0-windows' hedef ├ğer├ğevesi destek kapsam─▒ d─▒┼ş─▒nda ve gelecekte g├╝venlik g├╝ncelle┼ştirmeleri almayacak. L├╝tfen destek ilkesi hakk─▒nda daha fazla bilgi i├ğin ┼şuraya bak─▒n: https://aka.ms/dotnet-core-support. [C:\workspace\AGVDesktop\AGVDesktop.csproj]
+C:\Program Files\dotnet\sdk\10.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets(158,5): warning NETSDK1137: Art─▒k Microsoft.NET.Sdk.WindowsDesktop SDK'sinin kullan─▒lmas─▒ gerekmiyor. K├Âk proje ├Â─şesinin Sdk ├Âzniteli─şini 'Microsoft.NET.Sdk' olarak de─şi┼ştirmeyi d├╝┼ş├╝n├╝n. [C:\workspace\AGVDesktop\AGVDesktop.csproj]
+Unhandled exception. System.Windows.Markup.XamlParseException: ''System.Windows.Markup.StaticResourceHolder' ÷­esinde de­er sa­lama i■lemi ÷zel durum d÷nd³rd³.' Sat²r numaras² '37' ve sat²r konumu '16'.
+ ---> System.Exception: 'BaseButtonStyle' adl² kaynak bulunam²yor. Kaynak adlar²nda b³y³k/k³³k harf ayr²m² vard²r.
+   at System.Windows.StaticResourceExtension.ProvideValueInternal(IServiceProvider serviceProvider, Boolean allowDeferredReference)
+   at MS.Internal.Xaml.Runtime.ClrObjectRuntime.CallProvideValue(MarkupExtension me, IServiceProvider serviceProvider)
+   --- End of inner exception stack trace ---
+   at System.Windows.Markup.XamlReader.RewrapException(Exception e, IXamlLineInfo lineInfo, Uri baseUri)
+   at System.Windows.Markup.WpfXamlLoader.Load(XamlReader xamlReader, IXamlObjectWriterFactory writerFactory, Boolean skipJournaledProperties, Object rootObject, XamlObjectWriterSettings settings, Uri baseUri)
+   at System.Windows.Markup.WpfXamlLoader.LoadBaml(XamlReader xamlReader, Boolean skipJournaledProperties, Object rootObject, XamlAccessLevel accessLevel, Uri baseUri)
+   at System.Windows.Markup.XamlReader.LoadBaml(Stream stream, ParserContext parserContext, Object parent, Boolean closeStream)
+   at System.Windows.Application.LoadBamlStreamWithSyncInfo(Stream stream, ParserContext pc)
+   at System.Windows.Application.DoStartup()
+   at System.Windows.Application.<.ctor>b__1_0(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.DispatcherOperation.InvokeImpl()
+   at MS.Internal.CulturePreservingExecutionContext.CallbackWrapper(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at MS.Internal.CulturePreservingExecutionContext.Run(CulturePreservingExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Windows.Threading.DispatcherOperation.Invoke()
+   at System.Windows.Threading.Dispatcher.ProcessQueue()
+   at System.Windows.Threading.Dispatcher.WndProcHook(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   at MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   at System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   at System.Windows.Application.RunDispatcher(Object ignore)
+   at System.Windows.Application.RunInternal(Window window)
+   at AGVDesktop.App.Main()
